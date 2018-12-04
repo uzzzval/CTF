@@ -1,6 +1,8 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-int main(){
-	printf(" Memory Address: %lx\n", (unsigned long long)getenv("MYSHELL"));
-	return 1;
+int main(int argc, char *argv[])
+{
+    char* ptr = getenv("SHELL");
+    printf("%p\n", ptr);
 }
